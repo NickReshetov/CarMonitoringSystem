@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gateway.DataAccess\Gateway.DataAccess.csproj" />
+    <ProjectReference Include="..\Gateway.Dtos\Gateway.Dtos.csproj" />
+  </ItemGroup>
+
+</Project>

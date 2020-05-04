@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CarsStatusesGenerator.Dtos\CarsStatusesGenerator.Dtos.csproj" />
+    <ProjectReference Include="..\Gateway.Dtos\Gateway.Dtos.csproj" />
+    <ProjectReference Include="..\Gateway.Services\Gateway.Services.csproj" />
+  </ItemGroup>
+
+
+</Project>
