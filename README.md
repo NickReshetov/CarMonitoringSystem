@@ -15,7 +15,7 @@ The right approach is to use SignalR to update car statuses only when the new st
  It is also possible to dockerize each component and use Kubernetes.
 <br/>
 <br/>
-*Deployment suppose to be preatty strait forward and in this order.
+*Deployment suppose to be preatty strait forward and in this order.<br/>
 	*ApiGateway
 	*DataStore
 	*StatusesDashboard
