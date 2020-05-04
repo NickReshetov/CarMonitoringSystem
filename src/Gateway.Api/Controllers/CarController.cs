@@ -2,6 +2,7 @@
 using Gateway.Services;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Threading.Tasks;
 
 namespace Gateway.Api.Controllers
 {
@@ -18,6 +19,6 @@ namespace Gateway.Api.Controllers
 
         [HttpPost]
         [Route("{id:Guid}/status")]
-        public void UpdateStatusAsync(Guid id, StatusDto statusDto) => _storageService.UpdateStatusAsync(id, statusDto);
+        public async Task UpdateStatusAsync(Guid id, StatusDto statusDto) => await _storageService.UpdateStatusAsync(id, statusDto);
     }
 }
