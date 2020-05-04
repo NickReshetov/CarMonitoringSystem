@@ -15,6 +15,6 @@ namespace DataStorage.Services
             _carRepository = carRepository;
         }
 
-        public Task UpdateStatusAsync(Guid id, StatusDto statusDto) => _carRepository.UpdateStatusAsync(id, statusDto);
+        public async Task UpdateStatusAsync(Guid id, StatusDto statusDto) => await _carRepository.UpdateStatusAsync(id, statusDto);
     }
 }

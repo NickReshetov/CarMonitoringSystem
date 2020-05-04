@@ -14,6 +14,6 @@ namespace Gateway.Services
             _storageRepository = storageRepository;
         }
 
-        public Task UpdateStatusAsync(Guid id, StatusDto statusDto) => _storageRepository.UpdateStatusAsync(id, statusDto);
+        public async Task UpdateStatusAsync(Guid id, StatusDto statusDto) => await _storageRepository.UpdateStatusAsync(id, statusDto);
     }
 }
