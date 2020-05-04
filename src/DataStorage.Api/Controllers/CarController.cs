@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Threading.Tasks;
 using DataStorage.Services;
 using DataStorage.Dtos;
 using DataStorage.Services.Interfaces;
@@ -19,6 +20,6 @@ namespace DataStorage.Api.Controllers
 
         [HttpPost]
         [Route("{id:guid}/status")]
-        public void UpdateStatusAsync(Guid id, StatusDto statusDto) => _carService.UpdateStatusAsync(id, statusDto);
+        public async Task UpdateStatusAsync(Guid id, StatusDto statusDto) => await _carService.UpdateStatusAsync(id, statusDto);
     }
 }
