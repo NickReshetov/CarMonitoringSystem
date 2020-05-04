@@ -1,6 +1,6 @@
 # CarMonitoringSystem
 <br/>
-![Systmem acrchitecture sketch](https://i.imgur.com/kYLL8G4.jpg)
+<img src="https://i.imgur.com/kYLL8G4.jpg" alt="Systmem acrchitecture sketch"/>
 <br/>
 <br/>
 1. The main idea behind the design of the system was to make it scalable and supportable, because over time the amount of cars and companies could increase.
@@ -16,6 +16,7 @@ The right approach is to use SignalR to update car statuses only when the new st
 <br/>
 <br/>
 3. Deployment suppose to be preatty strait forward and in this order.<br/>
+In addition you need to keep in mind backwards compatibility<br/>
 	- ApiGateway<br/>
 	- DataStore<br/>
 	- StatusesDashboard<br/>
