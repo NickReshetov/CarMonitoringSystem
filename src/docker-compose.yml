@@ -1,0 +1,37 @@
+version: '3.4'
+
+services:
+  gateway.api:
+    image: ${DOCKER_REGISTRY-}gatewayapi
+    ports:
+    - "44314:80"
+    build:
+      context: .
+      dockerfile: Gateway.Api/Dockerfile
+
+  datastorage.api:
+    image: ${DOCKER_REGISTRY-}datastorageapi
+    ports:
+    - "44387:80"
+    build:
+      context: .
+      dockerfile: DataStorage.Api/Dockerfile
+
+
+  statusesdashboard.web:
+    image: ${DOCKER_REGISTRY-}statusesdashboardweb
+    ports:
+    - "44349:80"
+    build:
+      context: .
+      dockerfile: StatusesDashboard.Web/Dockerfile
+
+
+  carsstatusesgenerator:
+    image: ${DOCKER_REGISTRY-}carsstatusesgenerator
+    ports:
+    - "44370:80"
+    build:
+      context: .
+      dockerfile: CarsStatusesGenerator/Dockerfile
+
